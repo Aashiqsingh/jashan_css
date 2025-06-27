@@ -1,0 +1,10 @@
+CSS --> cascading style sheet 
+
+There are three ways to define CSS:
+1. external CSS file -- [.css] - <link>
+2. internal CSS file -- <style>
+3. inline CSS -- same line 
+
+
+run :
+html 
