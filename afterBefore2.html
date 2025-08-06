@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYEI5nU2R_FOfpmEBKHJW7TXrT7PKTdmtAw&s');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background-color: rgba(255, 68, 0, 0.788);
+
+        transition: 1s;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        background-color: rgba(0, 0, 255, 0.795);
+        /* left: 157px; */
+        right: 972px;
+        bottom: 250px;
+        transition: 1s;
+    }
+    .box:hover::before{
+        width: 0;
+        height: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0;
+        height: 0;
+        transition: 1s;
+    }
+</style>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
