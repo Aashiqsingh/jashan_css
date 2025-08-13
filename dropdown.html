@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 100px;
+        width: 100%;
+        background-color: teal;
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        width: 200px;
+        text-align: center;
+        line-height: 100px;
+        /* border-right: 1px solid blue; */
+        position: relative;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+
+    .navbar li a:hover {
+        background-color: orangered;
+    }
+
+    .navbar ul ul {
+        position: absolute;
+        background-color: teal;
+        display: none;
+    }
+
+    .navbar ul li:hover>ul {
+        /* display: flex; */
+        display: block;
+    }
+    .navbar ul ul ul{
+        /* left: 200px; */
+        left: 100%;
+        top: 0;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a>
+                                <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Signup</a></li>
+                        </ul>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Signup</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Signup</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Signup</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Signup</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Signup</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
